@@ -14,3 +14,8 @@ services:
       - "8089:80"
     depends_on:
       - csgbackend
+
+networks:
+  default:
+    external:
+      name: nginxproxymanager_default

@@ -36,6 +36,8 @@
 import { ref } from 'vue';
 import axios from 'axios';
 
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+
 const colors = ref([]);
 const imageData = ref('');
 
@@ -51,7 +53,7 @@ const uploadImage = async (event) => {
   formData.append('image', file);
 
   try {
-    const response = await axios.post('http://localhost:5000/get-colors', formData, {
+    const response = await axios.post(`${apiBaseUrl}/get-colors`, formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }

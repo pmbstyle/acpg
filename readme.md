@@ -1,11 +1,5 @@
 # AI Color Scheme Generator
 
-![Demo](https://csg.trofimov.ca/preview.png)
-
-## Live
-
-https://csg.trofimov.ca
-
 ## Overview
 The AI Color Scheme Generator is a web application that allows users to upload images and generate color palettes based on those images. It showcases the integration of Vue.js frontend with a Flask backend, along with the use of AI to analyze images and extract dominant colors.
 
